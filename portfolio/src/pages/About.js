@@ -35,8 +35,9 @@ const About = () => {
           <img src={urlFor(author.authorImage).url()} className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8" alt={author.name} />
           <div className="text-lg flex flex-col justify-center">
             <h1 className="font-font1 text-4xl lg:text-6xl font-bold text-green-300 mb-4"> Hello I'm{" "}<span className="text-green-100">{author.name}</span>!</h1>
-            <div className="prose lg:prose-xl text-white">
+            <div className="prose lg:prose-xl text-white break-words">
               <BlockContent blocks={author.bio} projectId="dqhobdu4" dataset="production" />
+              
             </div>
           </div>
         </section>}
